@@ -1,0 +1,24 @@
+body{
+    position: relative; 
+}
+#section1 {padding-top:50px;height:50%;color: #000; background-color: #84BDA6; font-size: 19px;}
+#section2 {padding-top:30px;height:50%;color: #000; background-color: #8CFFD2;font-size: 19px;}
+#section3 {padding-top:30px;height:50%;color: #000; background-color: #84BDA6;font-size: 19px;}
+#section4 {padding-top:30px;height:50%;color: #000; background-color: #8CFFD2;font-size: 19px;}
+#section5 {padding-top:30px;height:50%;color: #000; background-color: #84BDA6;font-size: 19px;}
+#section6 {padding-top:30px;height:50%;color: #000; background-color: #8CFFD2;font-size: 19px;}
+#section7 {padding-top:30px;height:50%;color: #000; background-color: #84BDA6;font-size: 19px;}
+#section8 {padding-top:30px;height:50%;color: #000; background-color: #8CFFD2;font-size: 19px; display: none}
+#resultado{margin: 20px ; font-family: fantasy; background-color: mediumpurple;
+    color: greenyellow}
+.centro{margin-left: 35%}
+.centro2{margin-left: 20%}
+#section9{padding-top:30px;height:50%;color: #000; background-color: #8CFFD2;font-size: 19px; display: none}
+#resultado2{margin: 20px ; font-family: fantasy; background-color: sandybrown;
+    color: red}
+#txt2{ margin-left: 20%}
+#txt1{ margin-left: 20%}
+.alternativa{background-color: lightseagreen;} 
+.Respostas{ margin-left: auto; margin-right: auto;color: green; font-family: fantasy;display: none}
+#resultado3{margin: 20px ; font-family: fantasy; background-color: black;
+    color: ghostwhite; display: none}

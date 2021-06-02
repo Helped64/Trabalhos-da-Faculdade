@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="quiz.css" >
+    <script>
+        function confirmar(){
+            var confirmado;
+            var q1 = form1.questao1.value;
+            var q2 = form1.questao2.value;
+            var q3 = form1.questao3.value;
+            var q4 = form1.questao4.value;
+            var q5 = form1.questao5.value;
+            var q6 = form1.questao6.value;
+            var q7 = form1.questao7.value;
+            if (q1 == false){
+                alert("Preencha a pergunta 1");
+                form1.questao1.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q2 == false){
+                alert("Preencha a pergunta 2");
+                form1.questao2.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q3 == false){
+                alert("Preencha a pergunta 3");
+                form1.questao3.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q4 == false){
+                alert("Preencha a pergunta 4");
+                form1.questao4.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q5 == false){
+                alert("Preencha a pergunta 5");
+                form1.questao5.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q6 == false){
+                alert("Preencha a pergunta 6");
+                form1.questao6.focus;
+                var confirmado = false;
+                return false;
+            }
+            if (q7 == false){
+                alert("Preencha a pergunta 7");
+                form1.questao7.focus;
+                var confirmado = false;
+                return false;
+            }
+            else{
+                  var confirmado = true;
+            }
+            if(confirmado=true){
+                var i ;
+                var cont = 0;
+                var q1 = document.getElementById("r1");
+                var q2 = document.getElementById("r2");
+                var q3 = document.getElementById("r3");
+                var q4 = document.getElementById("r4");
+                var q5 = document.getElementById("r5");
+                var q6 = document.getElementById("r6");
+                var q7 = document.getElementById("r7");
+                var gabarito = [q1,q2,q3,q4,q5,q6,q7,]
+                for (var i =0; i<7;i++){
+                    if( gabarito[i].checked == true){
+                        cont ++
+                    }
+                }
+                alert("Resposta ao final da página");
+                if(cont > 4){
+                    var final = document.getElementById("section8")
+                    var texto1 = document.getElementById("txt1")    
+                    final.style.display ="block"
+                    texto1.innerHTML = "Você acertou: " + cont + " alternativa(s) <br> Gabarito : <br> 1-C <br> 2-A <br> 3-B <br> 4-A <br> 5-B <br> 6-D <br> 7-D"
+                    var final3 = document.getElementById("section10")
+                    var texto3 = document.getElementById("txt3")    
+                    final3.style.display ="block"
+                    texto3.innerHTML = " "
+                }
+                else {
+                    var final2 = document.getElementById("section9")
+                    var texto2 = document.getElementById("txt2")
+                    final2.style.display ="block"
+                    texto2.innerHTML = "Você acertou: " + cont + " alternativa(s) <br> Gabarito : <br> 1-C <br> 2-A <br> 3-B <br> 4-A <br> 5-B <br> 6-D <br> 7-D"
+                }
+            }
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Cloud Quiz</a>
+                </div>
+                <div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#section1">Pergunta 1</a></li>
+                            <li><a href="#section2">Pergunta 2</a></li>
+                            <li><a href="#section3">Pergunta 3</a></li>
+                            <li><a href="#section4">Pergunta 4</a></li>
+                            <li><a href="#section5">Pergunta 5</a></li>
+                            <li><a href="#section6">Pergunta 6</a></li>
+                            <li><a href="#section7">Pergunta 7</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <form name="form1">
+            <section id="section1" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group"  >
+                        <li class="list-group-item" style="background-color: darkblue ; color: #fff">1- Dentre as utilidades dos serviços de cloud storage (armazenagem na nuvem), assinale a alternativa INCORRETA:</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue"  >
+                            <div class="radio" class="errado" >
+                                <label >
+                                    <input type="radio"   name ="questao1" value="q1" >A) Acessar arquivos quando não se está no local do seu computador, como por exemplo fora do escritório ou em viagens.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao1" value="q1"  >B) Compartilhar arquivos com os pares.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao1" value="q1" id = "r1">C) Acessar arquivos quando estiver sem acesso à internet.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao1" value="q1" >D) Fazer backup de dados.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : C</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section2" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="background-color:darkblue; color: #fff">2- Na adoção dos recursos de computação na nuvem o Analista de Sistemas selecionou o modelo IaaS que disponibiliza, dentre outros recursos, o serviço de</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" >
+                                <label >
+                                    <input type="radio" name="questao2" value="q2" id = "r2" >A) armazenamento de Backup. 
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao2" value="q2">B) gerenciamento de banco de dados.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao2" value="q2">C) provedor de e-mail.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao2" value="q2">D) hospedagem de site.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : A</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section3" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="background-color: darkblue ; color: #fff">3- São exemplos de serviços de armazenamento de arquivos em nuvem</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" >
+                                <label >
+                                    <input type="radio" name="questao3" value="q3">A) Dropbox e Google Chrome.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao3" value="q3" id = "r3">B) Dropbox e Google Drive.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao3" value="q3">C) Google Drive e Firefox.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao3" value="q3">D) Firefox e Google Chrome.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : B</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section4" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="background-color:darkblue  ; color: #fff">4- São serviços de Cloud Computing:</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" id ="v4">
+                                <label >
+                                    <input type="radio" name="questao4" value="q4 "id = "r4">A) Dropbox, Google Drive e SkyDrive.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao4" value="q4">B) Google Drive, SkyDrive e Symbian.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao4" value="q4">C) Dropbox, Google Drive e Tizen.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao4" value="q4">D) Dropbox, Symnbian e Tizen.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : A</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section5" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" ><li class="list-group-item" style="background-color:darkblue ; color: #fff">5- A computação em nuvem, ou cloud computing, trata a computação como um serviço oferecido por meio da internet de forma gratuita ou paga. A esse respeito, assinale a alternativa correspondente à categoria de cloud computing em que os softwares Google Docs e Gmail são classificados.</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" >
+                                <label >
+                                    <input type="radio" name="questao5" value="q5">A) Documentação de serviços.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao5" value="q5"  id = "r5">B) Software como serviço
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao5" value="q5" >C) Infraestrutura de redes sociais
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao5" value="q5">D) Redes sociais como serviço
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : B</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section6" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="background-color:darkblue ; color: #fff">6- Cloud computing, ou computação em nuvem, é um modelo recente de computação que permite ao usuário acessar uma grande variedade de aplicações e serviços em qualquer lugar, independentemente da plataforma, pela internet. O tipo de nuvem no qual os recursos são alocados em um servidor dentro da própria empresa ou em um servidor terceirizado, para uso exclusivo, é denominado nuvem
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" >
+                                <label >
+                                    <input type="radio" name="questao6" value="q6">A) Confidencial.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao6" value="q6" >B) Sigilosa.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao6" value="q6">C) Pública.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue ">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao6" value="q6" id = "r6">D) Privada.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : D</h1>
+                    </article>
+                </section>
+            </section>
+            <section id="section7" class="container-fluid">
+                <section style="margin: 3%">
+                    <ul class="list-group" >
+                        <li class="list-group-item" style="background-color:darkblue ; color: #fff">7- Considerando que uma empresa tenha contratado serviços em nuvem, assinale a opção correta.</li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio" >
+                                <label >
+                                    <input type="radio" name="questao7" value="q7">A) A empresa deverá encomendar novas máquinas de servidores para o trabalho em nuvem.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color:cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao7" value="q7">B) A empresa terá de alterar o contrato de fornecimento de espaço em disco caso necessite de mais espaço de armazenamento.
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao7" value="q7">C) A empresa terá de alterar o contrato de fornecimento de serviço de processamento caso necessite de maior capacidade de processamento
+                                </label>
+                            </div>
+                        </li>
+                        <li class="list-group-item" style="background-color: cornflowerblue">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="questao7" value="q7 "  id = "r7">D) Os serviços contratados podem ser desligados em horários predeterminados, para economia de custos.
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <article class = "Respostas">
+                        <h1>Resposta : D</h1>
+                    </article>
+                    <button type="button" class="btn " value="Enviar" onclick=" confirmar(); mostrarFinal()">Enviar</button>
+                </section>
+            </section>
+        </form>
+        <section id = "section8" class="container-fluid">
+            <div class="jumbotron" id ="resultado">
+                <h1 class="centro">Parabéns !!!</h1>
+                <h1 id="txt1"></h1>
+            </div>
+        </section>
+        <section id ="section9" class="container-fluid">
+            <div class="jumbotron" id ="resultado2">
+                <h1 class="centro">Tente de novo !!!</h1>
+                <h1 id="txt2"></h1>
+            </div>
+        </section>
+        <section id ="section10" class="container-fluid">
+            <div class="jumbotron" id ="resultado3">
+                <h1 class="centro">Gabarito</h1>
+                <h1 id="txt3"></h1>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,168 @@
+@media only screen and (min-width: 321px) {
+    
+body{
+    background-color: lawngreen;
+    width: 100%;
+    height: 100%;
+    font-size: 1em;
+}
+
+#menu{
+    height: auto;
+    width: 49%;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#menu ul{
+    margin: 1em;
+    list-style: none;
+    background-color: darkseagreen;
+    padding: 15px;
+    margin-left: 0px;
+    border: 0.25em outset black
+}
+
+#menu ul li{
+    display: inline;
+    padding: 2.4%;
+    margin: auto;
+}
+
+#menu ul li a:hover{
+    color: white;
+}
+
+#corpo{
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: lawngreen;
+    text-align: justify
+}
+
+a{
+    text-decoration: none;
+    color: forestgreen;
+    font-weight: bold
+}
+
+#logo{
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#logo2{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto  
+}
+
+#galeria2{
+    width: 94%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#galeria2 tr td img {
+}
+
+#galeria1{
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#galeria1 img{
+}
+
+table td{;
+    margin: 0px;
+    padding: 0px;
+    margin-right: auto;
+    margin-right: auto;
+}
+}
+
+@media only screen and (max-width: 320px){
+    
+body{
+    background-color: lawngreen;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-size: 1em;
+}
+    
+#logo{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+#logo2{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#galeria1 tr td img{
+                    width: 5.5em;
+                    height: 4.5em;
+                    margin-left: auto;
+                    margin-right: auto
+}
+    
+#galeria2 tr td img{
+                    width: 5.2em;
+                    height: 5.5em;
+                    margin-left: auto;
+                    margin-right: auto;
+}
+    
+#menu{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+#menu ul{
+        display: block;
+        background-color:darkseagreen;
+        border: outset black 0.25em;
+}
+    
+#menu ul li {
+            font-size: 1.2em;
+            text-decoration: none;
+            list-style: none;
+            padding: 0em 0.5em 0em 0.5em;
+            margin: 0.5em 2em 0.5em 2em;
+}
+
+#menu ul li a:hover{
+    color: white;
+}
+
+.col1{letter-spacing: 0.1em}
+    
+a{
+text-decoration: none;
+color: forestgreen
+}
+    
+.table1 tr td img{;;
+        width: 5.5em;
+        height: 4.5em;
+}
+}
