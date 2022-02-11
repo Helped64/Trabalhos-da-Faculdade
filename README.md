@@ -5,5 +5,3 @@
 
 ### Participantes desses trabalhos: 
 [Matheus de Oliveira Portilho](https://github.com/Helped64)
- 
-[Nathan Novais Borges](https://github.com/NathanNNB)
